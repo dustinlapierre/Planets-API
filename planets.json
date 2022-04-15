@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Mercury",
+        "mass": {
+            "value": 0.330,
+            "unit": "10^24 kg"
+        },
+        "diameter": {
+            "value": 4879,
+            "unit": "km"
+        },
+        "density": {
+            "value": 5429,
+            "unit": "kg/m^3"
+        },
+        "gravity": {
+            "value": 3.7,
+            "unit": "m/s^2"
+        },
+        "distanceFromSun": {
+            "value": 57.9,
+            "unit": "10^6 km"
+        },
+        "avgTemp": {
+            "value": 167,
+            "unit": "C"
+        },
+        "numberOfMoons": 0,
+        "hasRings": false
+    }
+]
