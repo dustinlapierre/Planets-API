@@ -14,6 +14,9 @@ app.use(express.json());
 const notFound = require("./middleware/not-found");
 const errorHandler = require("./middleware/error-handler");
 
+//landing page
+app.use(express.static("./public"));
+
 //router
 const planetRouter = require("./routes/planets");
 app.use("/api/v1", planetRouter);
