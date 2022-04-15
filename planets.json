@@ -27,5 +27,34 @@
         },
         "numberOfMoons": 0,
         "hasRings": false
+    },
+    {
+        "name": "Venus",
+        "mass": {
+            "value": 4.87,
+            "unit": "10^24 kg"
+        },
+        "diameter": {
+            "value": 12104,
+            "unit": "km"
+        },
+        "density": {
+            "value": 5243,
+            "unit": "kg/m^3"
+        },
+        "gravity": {
+            "value": 8.9,
+            "unit": "m/s^2"
+        },
+        "distanceFromSun": {
+            "value": 108.2,
+            "unit": "10^6 km"
+        },
+        "avgTemp": {
+            "value": 464,
+            "unit": "C"
+        },
+        "numberOfMoons": 0,
+        "hasRings": false
     }
 ]

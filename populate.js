@@ -13,8 +13,9 @@ const start = async () =>
     {
         await connectDB(process.env.MONGO_URI);
         await Planet.deleteMany();
+        console.log('Successfully cleared database');
         await Planet.create(jsonData);
-        console.log('Successfully reloaded database from file');
+        console.log('Successfully loaded database from file');
         process.exit(0);
     }
     catch(error)
