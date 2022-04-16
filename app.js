@@ -8,6 +8,19 @@ const app = express();
 //database connection
 const connectDB = require("./db/connect");
 
+//security packages
+const helmet = require("helmet");
+const cors = require("cors");
+const xss = require("xss-clean");
+const rateLimiter = require("express-rate-limit");
+
+app.set("trust proxy", 1);
+app.use(rateLimiter({windowMs: 15 * 60 * 1000, max: 100})); //100 requests per 15 minutes
+app.use(helmet());
+app.use(cors());
+app.use(xss());
+
+//use json
 app.use(express.json());
 
 //error handlers
