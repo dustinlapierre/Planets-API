@@ -56,5 +56,34 @@
         },
         "numberOfMoons": 0,
         "hasRings": false
+    },
+    {
+        "name": "Earth",
+        "mass": {
+            "value": 5.97,
+            "unit": "10^24 kg"
+        },
+        "diameter": {
+            "value": 12756,
+            "unit": "km"
+        },
+        "density": {
+            "value": 5514,
+            "unit": "kg/m^3"
+        },
+        "gravity": {
+            "value": 9.8,
+            "unit": "m/s^2"
+        },
+        "distanceFromSun": {
+            "value": 149.6,
+            "unit": "10^6 km"
+        },
+        "avgTemp": {
+            "value": 15,
+            "unit": "C"
+        },
+        "numberOfMoons": 1,
+        "hasRings": false
     }
 ]

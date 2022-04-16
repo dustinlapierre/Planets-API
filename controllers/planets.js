@@ -2,8 +2,10 @@ const Planet = require("../models/planet");
 
 const getAllPlanets = async (req, res) =>
 {
-    const {name, hasRings} = req.query;
+    const {name, hasRings, sort, fields} = req.query;
     const query = {};
+
+    //build query object
     if(hasRings)
     {
         query.hasRings = hasRings === "true" ? true : false;
@@ -14,8 +16,22 @@ const getAllPlanets = async (req, res) =>
         query.name = {$regex: name, $options: 'i'};
     }
 
-    console.log(query);
-    const planets = await Planet.find(query);
+    //do query
+    let result = Planet.find(query);
+
+    //sorting flags
+    if(sort)
+    {
+        const sortList = sort.split(",").join(" ");
+        result = result.sort(sortList);
+    }
+    if(fields)
+    {
+        const fieldsList = fields.split(",").join(" ");
+        result = result.select(fieldsList);
+    }
+    const planets = await result;
+
     res.status(200).json({planets});
 };
 
