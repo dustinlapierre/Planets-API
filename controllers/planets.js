@@ -2,11 +2,16 @@ const Planet = require("../models/planet");
 
 const getAllPlanets = async (req, res) =>
 {
-    const {hasRings} = req.query;
+    const {name, hasRings} = req.query;
     const query = {};
     if(hasRings)
     {
         query.hasRings = hasRings === "true" ? true : false;
+    }
+    if(name)
+    {
+        //case insensitive
+        query.name = {$regex: name, $options: 'i'};
     }
 
     console.log(query);
