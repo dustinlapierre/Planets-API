@@ -85,5 +85,179 @@
         },
         "numberOfMoons": 1,
         "hasRings": false
+    },
+    {
+        "name": "Mars",
+        "mass": {
+            "value": 0.642,
+            "unit": "10^24 kg"
+        },
+        "diameter": {
+            "value": 6792,
+            "unit": "km"
+        },
+        "density": {
+            "value": 3934,
+            "unit": "kg/m^3"
+        },
+        "gravity": {
+            "value": 3.7,
+            "unit": "m/s^2"
+        },
+        "distanceFromSun": {
+            "value": 228.0,
+            "unit": "10^6 km"
+        },
+        "avgTemp": {
+            "value": -65,
+            "unit": "C"
+        },
+        "numberOfMoons": 2,
+        "hasRings": false
+    },
+    {
+        "name": "Jupiter",
+        "mass": {
+            "value": 1898,
+            "unit": "10^24 kg"
+        },
+        "diameter": {
+            "value": 142984,
+            "unit": "km"
+        },
+        "density": {
+            "value": 1326,
+            "unit": "kg/m^3"
+        },
+        "gravity": {
+            "value": 23.1,
+            "unit": "m/s^2"
+        },
+        "distanceFromSun": {
+            "value": 778.5,
+            "unit": "10^6 km"
+        },
+        "avgTemp": {
+            "value": -110,
+            "unit": "C"
+        },
+        "numberOfMoons": 79,
+        "hasRings": true
+    },
+    {
+        "name": "Saturn",
+        "mass": {
+            "value": 568,
+            "unit": "10^24 kg"
+        },
+        "diameter": {
+            "value": 120536,
+            "unit": "km"
+        },
+        "density": {
+            "value": 687,
+            "unit": "kg/m^3"
+        },
+        "gravity": {
+            "value": 9.0,
+            "unit": "m/s^2"
+        },
+        "distanceFromSun": {
+            "value": 1432.0,
+            "unit": "10^6 km"
+        },
+        "avgTemp": {
+            "value": -140,
+            "unit": "C"
+        },
+        "numberOfMoons": 82,
+        "hasRings": true
+    },
+    {
+        "name": "Uranus",
+        "mass": {
+            "value": 86.8,
+            "unit": "10^24 kg"
+        },
+        "diameter": {
+            "value": 51118,
+            "unit": "km"
+        },
+        "density": {
+            "value": 1270,
+            "unit": "kg/m^3"
+        },
+        "gravity": {
+            "value": 8.7,
+            "unit": "m/s^2"
+        },
+        "distanceFromSun": {
+            "value": 2867.0,
+            "unit": "10^6 km"
+        },
+        "avgTemp": {
+            "value": -195,
+            "unit": "C"
+        },
+        "numberOfMoons": 27,
+        "hasRings": true
+    },
+    {
+        "name": "Neptune",
+        "mass": {
+            "value": 102,
+            "unit": "10^24 kg"
+        },
+        "diameter": {
+            "value": 49528,
+            "unit": "km"
+        },
+        "density": {
+            "value": 1638,
+            "unit": "kg/m^3"
+        },
+        "gravity": {
+            "value": 11.0,
+            "unit": "m/s^2"
+        },
+        "distanceFromSun": {
+            "value": 4515.0,
+            "unit": "10^6 km"
+        },
+        "avgTemp": {
+            "value": -200,
+            "unit": "C"
+        },
+        "numberOfMoons": 14,
+        "hasRings": true
+    },
+    {
+        "name": "Pluto",
+        "mass": {
+            "value": 0.0130,
+            "unit": "10^24 kg"
+        },
+        "diameter": {
+            "value": 2376,
+            "unit": "km"
+        },
+        "density": {
+            "value": 1850,
+            "unit": "kg/m^3"
+        },
+        "gravity": {
+            "value": 0.7,
+            "unit": "m/s^2"
+        },
+        "distanceFromSun": {
+            "value": 5906.4,
+            "unit": "10^6 km"
+        },
+        "avgTemp": {
+            "value": -225,
+            "unit": "C"
+        },
+        "numberOfMoons": 5,
+        "hasRings": false
     }
 ]
