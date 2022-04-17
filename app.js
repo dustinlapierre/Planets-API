@@ -20,6 +20,11 @@ app.use(helmet());
 app.use(cors());
 app.use(xss());
 
+//swagger docs
+const swaggerUI = require("swagger-ui-express");
+const YAML = require("yamljs");
+const swaggerDocument = YAML.load("./swagger.yaml");
+
 //use json
 app.use(express.json());
 
@@ -33,6 +38,8 @@ app.use(express.static("./public"));
 //router
 const planetRouter = require("./routes/planets");
 app.use("/api/v1", planetRouter);
+
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
 //catch all for non-existing routes
 app.use(notFound);

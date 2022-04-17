@@ -1,0 +1,64 @@
+openapi: 3.0.0
+info:
+  title: Planets API
+  contact: {}
+  version: '1.0'
+servers:
+- url: https://planets-info-api.herokuapp.com/api/v1/
+  variables: {}
+paths:
+  /planets:
+    get:
+      tags:
+      - Misc
+      summary: Get Planet Data
+      operationId: GetPlanetData
+      parameters:
+      - name: name
+        in: query
+        description: 'Search for a single planet with the given name, case insensitive'
+        required: false
+        style: form
+        explode: true
+        schema:
+          example: Jupiter
+      - name: sort
+        in: query
+        description: 'Choose one or more fields to sort by, add a - to sort in reverse'
+        required: false
+        style: form
+        explode: true
+        schema:
+          example: -name
+      - name: fields
+        in: query
+        description: 'Only show these selected fields'
+        required: false
+        style: form
+        explode: true
+        schema:
+          example: name, numberOfMoons
+      - name: numericFilters
+        in: query
+        description: 'Apply mathematical comparison filters to any of the numeric fields'
+        required: false
+        style: form
+        explode: true
+        schema:
+          example: avgTemp<=10
+      - name: hasRings
+        in: query
+        description: 'Filter for whether a planet has rings or not'
+        required: false
+        style: form
+        explode: true
+        schema:
+          example: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+tags:
+- name: Misc
+  description: ''
